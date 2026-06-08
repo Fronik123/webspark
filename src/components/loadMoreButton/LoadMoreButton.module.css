@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 61px;
+}
+
+.button {
+  padding: 8px 26px;
+  border: 1px solid #929292;
+  border-radius: 999px;
+  background: #fafafa;
+  color: #929292;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: #b3b3b3;
+  color: #6b6b6b;
+}
+
+.button:focus-visible {
+  outline: 2px solid #3d8eda;
+  outline-offset: 2px;
+}

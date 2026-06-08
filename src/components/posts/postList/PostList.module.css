@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px 8px;
+  padding-bottom: 32px;
+}
+
+.list {
+  padding-bottom: 32px;
 }
 
 @media (max-width: 1024px) {
