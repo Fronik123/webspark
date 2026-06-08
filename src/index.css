@@ -59,12 +59,27 @@ p {
 }
 
 .page {
+  position: relative;
   margin: 0 auto;
   min-height: 100vh;
   background: #fafafa;
 }
 
+.pageBackgroundBottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page > :not(.pageBackgroundBottom) {
+  position: relative;
+  z-index: 1;
+}
+
 .main {
   max-width: 836px;
   margin: 0 auto;
+  padding: 0 24px;
 }
