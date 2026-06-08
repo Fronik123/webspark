@@ -1,28 +1,34 @@
+import { profile } from "../../data/profile";
+import styles from "./ProfileHeader.module.css";
+
 export default function ProfileHeader() {
+  const { username, startDate, stats } = profile;
   return (
-    <header>
-      <h1>monblanproject</h1>
+    <header className={styles.header}>
+      <div className={styles.headerContent}>
+        <div className={styles.top}>
+          <h1 className={styles.username}>{username}</h1>
+          <div className={styles.startDate}>
+            <p>Start on {startDate}</p>
+          </div>
+        </div>
 
-      <div></div>
+        <div className={styles.stats}>
+          <div>
+            <strong>{stats.posts}</strong> posts
+          </div>
+          <div>
+            <strong>{stats.followers.toLocaleString()}</strong> followers
+          </div>
+          <div>
+            <strong>{stats.following}</strong> following
+          </div>
+        </div>
 
-      <div>
-        <p>870</p>
-        <p>posts</p>
+        <div>
+          <p>Date</p>
+        </div>
       </div>
-
-      <div>
-        <p>1.2k</p>
-        <p>followers</p>
-      </div>
-
-      <div>
-        <p>1.2k</p>
-        <p>following</p>
-      </div>
-
-      <div></div>
-
-      <div></div>
     </header>
   );
 }
