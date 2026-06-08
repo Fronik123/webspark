@@ -15,7 +15,7 @@ export default function PostCard({ post }) {
             {post.today.likes}
           </div>
           <div className={styles.metric}>
-            <img src={commentIcon} alt="like" /> {post.today.comments}
+            <img src={commentIcon} alt="comment" /> {post.today.comments}
           </div>
         </div>
 
@@ -26,7 +26,7 @@ export default function PostCard({ post }) {
             <img src={likeIcon} alt="like" /> {post.snapshot.likes}
           </div>
           <div className={styles.metric}>
-            <img src={commentIcon} alt="like" />
+            <img src={commentIcon} alt="comment" />
             {post.snapshot.comments}
           </div>
         </div>

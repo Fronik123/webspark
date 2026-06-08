@@ -18,7 +18,7 @@ export default function PostRow({ post }) {
             </div>
 
             <div className={styles.metric}>
-              <img src={commentIcon} alt="like" /> {post.today.comments}
+              <img src={commentIcon} alt="comment" /> {post.today.comments}
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function PostRow({ post }) {
             </div>
 
             <div className={styles.metric}>
-              <img src={commentIcon} alt="like" /> {post.snapshot.comments}
+              <img src={commentIcon} alt="comment" /> {post.snapshot.comments}
             </div>
           </div>
         </div>

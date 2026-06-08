@@ -1,16 +1,68 @@
-# React + Vite
+# Webspark
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page landing built with React and Vite. It displays a social media profile dashboard with static post data, engagement metrics, and simple filtering controls.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Profile header with stats (posts, followers, following)
+- Date range filter with calendar picker
+- Grid and list view toggle
+- Post cards with current and historical likes/comments
+- Load more pagination
+- Responsive layout
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Flatpickr (date picker)
+- CSS Modules
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
+
+```bash
+npm run dev
+```
+
+Open the URL shown in the terminal (usually `http://localhost:5173`).
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+src/
+├── components/     # UI components (header, posts, toolbar, etc.)
+├── data/           # Static profile and posts data
+├── utils/          # Helper functions (date filtering)
+└── assets/         # Images and icons
+```
