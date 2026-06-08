@@ -3,6 +3,10 @@ import PostRow from "../postRow/PostRow";
 import styles from "./PostList.module.css";
 
 export default function PostList({ posts, viewMode }) {
+  if (posts.length === 0) {
+    return <p className={styles.noPosts}>No posts found</p>;
+  }
+
   if (viewMode === "grid") {
     return (
       <div className={styles.grid}>

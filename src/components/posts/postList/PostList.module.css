@@ -9,6 +9,11 @@
   padding-bottom: 32px;
 }
 
+.noPosts {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);

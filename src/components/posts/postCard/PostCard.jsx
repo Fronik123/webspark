@@ -23,11 +23,11 @@ export default function PostCard({ post }) {
           <p>{post.snapshot.date}</p>
 
           <div className={styles.metric}>
-            <img src={likeIcon} alt="like" /> {post.today.likes}
+            <img src={likeIcon} alt="like" /> {post.snapshot.likes}
           </div>
           <div className={styles.metric}>
             <img src={commentIcon} alt="like" />
-            {post.today.comments}
+            {post.snapshot.comments}
           </div>
         </div>
       </div>

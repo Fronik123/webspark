@@ -28,11 +28,11 @@ export default function PostRow({ post }) {
 
           <div className={styles.mainMetric}>
             <div className={styles.metric}>
-              <img src={likeIcon} alt="like" /> {post.today.likes}
+              <img src={likeIcon} alt="like" /> {post.snapshot.likes}
             </div>
 
             <div className={styles.metric}>
-              <img src={commentIcon} alt="like" /> {post.today.comments}
+              <img src={commentIcon} alt="like" /> {post.snapshot.comments}
             </div>
           </div>
         </div>
