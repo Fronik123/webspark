@@ -68,7 +68,7 @@ p {
 .pageBackgroundBottom {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 40px;
   z-index: 0;
   pointer-events: none;
 }
