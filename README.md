@@ -1,5 +1,7 @@
 # Webspark
 
+**Live demo:** [https://fronik123.github.io/webspark/](https://fronik123.github.io/webspark/)
+
 A single-page landing built with React and Vite. It displays a social media profile dashboard with static post data, engagement metrics, and simple filtering controls.
 
 ## Features
