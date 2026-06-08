@@ -16,7 +16,7 @@ export default function ProfileHeader({
       <img
         src={background}
         alt=""
-        className={styles.background}
+        className={styles.headerBackground}
         aria-hidden="true"
       />
 

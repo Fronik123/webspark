@@ -83,3 +83,9 @@ p {
   margin: 0 auto;
   padding: 0 24px;
 }
+
+@media (max-width: 450px) {
+  .main {
+    padding: 0 16px;
+  }
+}

@@ -46,3 +46,32 @@
   color: #000;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .row {
+    gap: 0;
+  }
+
+  .wrapperContent {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 450px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .wrapperContent {
+    font-size: 12px;
+  }
+
+  .upload {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapperContent {
+    flex-direction: column;
+  }
+}
