@@ -26,6 +26,7 @@
 .logo {
   position: absolute;
   left: 200px;
+  top: 6px;
   z-index: 2;
   pointer-events: none;
 }
@@ -33,15 +34,13 @@
 .headerContent {
   position: relative;
   z-index: 2;
-  padding: 16px;
+  padding-top: 35px;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
 }
 
 .top {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 16px;
   margin-bottom: 16px;
@@ -62,8 +61,11 @@
 
 .stats {
   display: flex;
-
   gap: 16px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
 }
 
 .startDate {
@@ -73,6 +75,7 @@
   font-size: 13px;
   font-weight: 400;
   border-radius: 2px;
+  line-height: 15px;
 }
 
 @media (min-width: 1400px) {
