@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 24px 0px #0000001f;
+  box-shadow: 0px 12px 24px 0px #0000001f inset;
+}
+
+.headerContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.username {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -1%;
+}
+
+.startBtn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.stats {
+  display: flex;
+
+  gap: 16px;
+}
+
+.startDate {
+  border: 1px solid #3d8eda;
+  padding: 6px 12px;
+  color: #3d8eda;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 2px;
+}
