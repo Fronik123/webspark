@@ -61,4 +61,10 @@ p {
 .page {
   margin: 0 auto;
   min-height: 100vh;
+  background: #fafafa;
+}
+
+.main {
+  max-width: 836px;
+  margin: 0 auto;
 }
