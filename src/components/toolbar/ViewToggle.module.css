@@ -1,0 +1,21 @@
+.toggle {
+  display: flex;
+  justify-content: end;
+  gap: 21px;
+  margin: 23px 0 27px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.active {
+  background: #3d8eda;
+}
