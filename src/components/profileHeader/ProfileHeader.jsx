@@ -1,9 +1,15 @@
 import { profile } from "../../data/profile";
+import DateRangeFilter from "../dateRangeFilter/DateRangeFilter";
 import styles from "./ProfileHeader.module.css";
 import background from "../../assets/background.png";
 import logo from "../../assets/logo.png";
 
-export default function ProfileHeader() {
+export default function ProfileHeader({
+  dateFrom,
+  dateTo,
+  onDateFromChange,
+  onDateToChange,
+}) {
   const { username, startDate, stats } = profile;
   return (
     <header className={styles.header}>
@@ -19,26 +25,28 @@ export default function ProfileHeader() {
       <div className={styles.headerContent}>
         <div className={styles.top}>
           <h1 className={styles.username}>{username}</h1>
-          <div className={styles.startDate}>
-            <p>Start on {startDate}</p>
-          </div>
+
+          <p className={styles.startDate}>Start on {startDate}</p>
         </div>
 
         <div className={styles.stats}>
-          <div>
+          <p>
             <strong>{stats.posts}</strong> posts
-          </div>
-          <div>
+          </p>
+          <p>
             <strong>{stats.followers.toLocaleString()}</strong> followers
-          </div>
-          <div>
+          </p>
+          <p>
             <strong>{stats.following}</strong> following
-          </div>
+          </p>
         </div>
 
-        <div>
-          <p>Date</p>
-        </div>
+        <DateRangeFilter
+          dateFrom={dateFrom}
+          dateTo={dateTo}
+          onDateFromChange={onDateFromChange}
+          onDateToChange={onDateToChange}
+        />
       </div>
     </header>
   );

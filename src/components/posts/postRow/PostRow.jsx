@@ -26,11 +26,6 @@ export default function PostRow({ post }) {
         <div>
           <p>{post.snapshot.date}</p>
 
-          <div>
-            <div className={styles.metric}></div>
-            <div className={styles.metric}></div>
-          </div>
-
           <div className={styles.mainMetric}>
             <div className={styles.metric}>
               <img src={likeIcon} alt="like" /> {post.today.likes}

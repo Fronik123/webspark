@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 19px 0 31px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  flex-shrink: 0;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+}
+
+.field {
+  display: flex;
+  align-items: stretch;
+  width: 148px;
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  padding: 6px 8px;
+  font-size: 13px;
+  font-family: inherit;
+  color: #000;
+  background: transparent;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #9a9a9a;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  border: none;
+  border-left: 1px solid #d8d8d8;
+  background: #f0f0f0;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.actionBtn:hover {
+  background: #e6e6e6;
+}
+
+:global(.flatpickr-calendar) {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  font-family: inherit;
+  margin-top: 4px;
+}
+
+:global(.flatpickr-calendar::before),
+:global(.flatpickr-calendar::after) {
+  border-bottom-color: #fff;
+}
+
+:global(.flatpickr-months) {
+  padding: 8px 4px 4px;
+}
+
+:global(.flatpickr-current-month) {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+:global(.flatpickr-prev-month),
+:global(.flatpickr-next-month) {
+  fill: #666;
+  padding: 4px 8px;
+}
+
+:global(.flatpickr-prev-month:hover svg),
+:global(.flatpickr-next-month:hover svg) {
+  fill: #3d8eda;
+}
+
+:global(.flatpickr-weekdays) {
+  background: transparent;
+}
+
+:global(span.flatpickr-weekday) {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+}
+
+:global(.flatpickr-day) {
+  font-size: 13px;
+  color: #000;
+  border-radius: 2px;
+  max-width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+
+:global(.flatpickr-day.prevMonthDay),
+:global(.flatpickr-day.nextMonthDay) {
+  color: #c8c8c8;
+}
+
+:global(.flatpickr-day:hover) {
+  background: rgba(61, 142, 218, 0.15);
+  border-color: transparent;
+}
+
+:global(.flatpickr-day.selected),
+:global(.flatpickr-day.selected:hover) {
+  background: #3d8eda;
+  border-color: #3d8eda;
+  color: #fff;
+}
+
+:global(.flatpickr-day.today) {
+  border-color: transparent;
+}
+
+:global(.flatpickr-day.today:hover) {
+  background: rgba(61, 142, 218, 0.15);
+  border-color: transparent;
+}
