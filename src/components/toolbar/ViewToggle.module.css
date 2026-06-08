@@ -14,8 +14,29 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: #c8c8c8;
 }
 
 .btn.active {
-  background: #3d8eda;
+  color: #3d8eda;
+}
+
+.iconGrid,
+.iconList {
+  display: block;
+  background-color: currentColor;
+}
+
+.iconGrid {
+  width: 22px;
+  height: 22px;
+  mask-image: url("../../assets/grid.svg");
+  -webkit-mask-image: url("../../assets/grid.svg");
+}
+
+.iconList {
+  width: 24px;
+  height: 22px;
+  mask-image: url("../../assets/list.svg");
+  -webkit-mask-image: url("../../assets/list.svg");
 }

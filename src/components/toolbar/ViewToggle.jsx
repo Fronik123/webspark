@@ -1,8 +1,5 @@
 import styles from "./ViewToggle.module.css";
 
-import gridIcon from "../../assets/grid.svg";
-import listIcon from "../../assets/list.svg";
-
 export default function ViewToggle({ viewMode, onChange }) {
   return (
     <div className={styles.toggle} role="group" aria-label="View mode">
@@ -13,7 +10,7 @@ export default function ViewToggle({ viewMode, onChange }) {
         aria-pressed={viewMode === "grid"}
         aria-label="Grid view"
       >
-        <img src={gridIcon} alt="Grid view" />
+        <span className={styles.iconGrid} aria-hidden="true" />
       </button>
 
       <button
@@ -23,7 +20,7 @@ export default function ViewToggle({ viewMode, onChange }) {
         aria-pressed={viewMode === "list"}
         aria-label="List view"
       >
-        <img src={listIcon} alt="List view" />
+        <span className={styles.iconList} aria-hidden="true" />
       </button>
     </div>
   );
